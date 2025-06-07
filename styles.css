@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+    --color-bg: #121212;
+    --color-primary: #bb86fc;
+    --color-primary-dark: #3700b3;
+    --color-text: #e0e0e0;
+    --color-text-light: #a0a0a0;
+    --color-white: #ffffff;
+    --border-radius: 12px;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    --max-width: 900px;
+    --background-image: url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1350&q=80'); /* Dumbbells wallpaper */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-white);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background-color: rgba(18, 18, 18, 0.85);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+header {
+    background-color: #222222;
+    color: var(--color-white);
+    padding: 2rem 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: var(--color-white);
+    opacity: 0.9;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tab-button {
+    background-color: #333333;
+    border: none;
+    color: var(--color-white);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #555555;
+}
+
+.tab-button.active {
+    background-color: var(--color-primary);
+    box-shadow: 0 0 10px var(--color-primary);
+}
+
+section {
+    background-color: #222222;
+    padding: 1.5rem 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    color: var(--color-white);
+}
+
+h2 {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 0.25rem;
+}
+
+h3 {
+    color: var(--color-white);
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+ul li:hover {
+    color: var(--color-primary);
+    cursor: default;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--color-white);
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.125rem;
+    }
+}
