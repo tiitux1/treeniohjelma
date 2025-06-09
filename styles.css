@@ -108,6 +108,15 @@ h2 {
     padding-bottom: 0.25rem;
 }
 
+#training-monday h2,
+#training-tuesday h2,
+#thursday h3,
+#saturday h3 {
+    color: var(--color-white);
+    border-bottom: none;
+    font-size: 1.75rem;
+}
+
 h3 {
     color: var(--color-white);
     font-weight: 600;
@@ -153,4 +162,48 @@ p {
     h3 {
         font-size: 1.125rem;
     }
+}
+
+/* Weigh-ins tab styles */
+#weighins {
+    padding: 1rem;
+}
+
+#weight-form {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+#weight-form label {
+    flex: 1 0 120px;
+    font-weight: 600;
+}
+
+#weight-form input {
+    flex: 2 0 150px;
+    padding: 0.3rem;
+    font-size: 1rem;
+}
+
+#weight-form button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: var(--color-primary);
+    border: none;
+    color: white;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#weight-form button:hover {
+    background-color: #36a2a2;
+}
+
+#weightChart {
+    max-width: 100%;
+    height: auto;
 }

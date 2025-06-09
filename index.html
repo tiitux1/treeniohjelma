@@ -6,6 +6,7 @@
     <title>Painonpudotusohjelma</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
@@ -20,6 +21,7 @@
             <button class="tab-button" data-target="thursday">Torstai</button>
             <button class="tab-button" data-target="saturday">Lauantai</button>
             <button class="tab-button" data-target="food">Ruokavalio</button>
+            <a class="tab-button" href="weighins.html" style="text-decoration:none; text-align:center;">Weigh-ins</a>
         </div>
 
         <section id="monday" class="tab-content active">
@@ -35,9 +37,8 @@
             </ul>
         </section>
 
-        <section id="tuesday" class="tab-content">
-            <h2>Treeni – Liikkeet</h2>
-            <h3>Maanantai</h3>
+        <section id="training-monday" class="tab-content">
+            <h2>Treeni – Maanantai</h2>
             <ul>
                 <li>Vinopenkki käsipainoilla – 4 x 8–10</li>
                 <li>Pystypunnerrus käsipainoilla – 4 x 8–10</li>
@@ -45,8 +46,10 @@
                 <li>Vipunostot sivulle – 3 x 12–15</li>
                 <li>Ranskalainen punnerrus käsipainoilla – 3 x 10–12</li>
             </ul>
+        </section>
 
-            <h3>Tiistai</h3>
+        <section id="training-tuesday" class="tab-content">
+            <h2>Treeni – Tiistai</h2>
             <ul>
                 <li>Kyykky tangolla – 4 x 6–8</li>
                 <li>Jalkaprässi – 4 x 10–12</li>
@@ -57,7 +60,7 @@
         </section>
 
         <section id="thursday" class="tab-content">
-            <h3>Torstai</h3>
+            <h3>Treeni – Torstai</h3>
             <ul>
                 <li>Kulmasoutu käsipainoilla – 4 x 8–10</li>
                 <li>Yhden käden soutu penkiltä – 3 x 10/puoli</li>
@@ -68,7 +71,7 @@
         </section>
 
         <section id="saturday" class="tab-content">
-            <h3>Lauantai</h3>
+            <h3>Treeni – Lauantai</h3>
             <ul>
                 <li>Maastaveto / Sumokyykky – 4 x 6–8</li>
                 <li>Bulgarian askelkyykyt – 3 x 10/puoli</li>
@@ -93,6 +96,9 @@
 
             <h3>Iltapala (300 kcal)</h3>
             <p>2 palaa ruisleipää + keitetty kananmuna + tomaatti + kurkku</p>
+        </section>
+
+        <section id="weighins" class="tab-content">
         </section>
     </div>
     <script src="scripts.js"></script>
